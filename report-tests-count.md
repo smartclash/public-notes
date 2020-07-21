@@ -86,3 +86,24 @@ Because of this design choice, we cannot make TSD return `numTests` property. If
 run tests programmatically have to make changes so that this breaking change is supported. Thus, we need to contact the
 TSD maintainer and ask them if it's okay to introduce this breaking change.
 
+## What can be done?
+
+To follow along, I would suggest you to clone the
+[WIP branch](https://github.com/MLH-Fellowship/tsd/tree/feature/verbose-reporting). Now go to 
+[source/cli.ts](https://github.com/MLH-Fellowship/tsd/blob/544c40159e00bc5364ed941ee4ace1d402d9dec4/source/cli.ts#L28)
+and you can see that the intellisense is reporting an error that it couldn't find `length` property in 
+`ExtendedDiagnostics` (which is expected).
+
+This means we need to re-write the following files (probably more) to make it support the breaking change about to be
+introduced.
+
+- Test files inside 
+[source/test](https://github.com/MLH-Fellowship/tsd/tree/544c40159e00bc5364ed941ee4ace1d402d9dec4/source/test)
+- The [source/cli.ts](https://github.com/MLH-Fellowship/tsd/blob/544c40159e00bc5364ed941ee4ace1d402d9dec4/source/cli.ts)
+- And *mostly* every file inside
+[source/lib](https://github.com/MLH-Fellowship/tsd/blob/544c40159e00bc5364ed941ee4ace1d402d9dec4/source/lib)
+
+## How to start?
+
+We need to get in touch with TSD's maintainer [Sam Verschueren](https://github.com/SamVerschueren). We must ask if this
+type of change is okay or not. Or we can get suggesstions and then start implementing those.
