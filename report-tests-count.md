@@ -49,7 +49,7 @@ Doing so, we will get an object like these:
 TSD library just runs the test. It does not report the number of tests it ran through. It does not report the number 
 of skipped tests. Nothing. All it does is return a null array if there is no failed tests.
 
-If test failed, it will return an array with these fields. But they are pretty useful to understand the why test are
+If test failed, it will return an array with these fields. But they are pretty useful to understand the why tests are
 failing.
 
 ```ts
@@ -79,8 +79,8 @@ if (diagnosis.length) {
 console.log('All tests passed. Yay!');
 ```
 
-As you can see. It does not report the number of tests it ran through. And the **only** way we know that tests are 
-passed is by counting the length.
+As you can see. It does not report the number of tests it ran through. And the **only** way to know if tests passed or 
+failed is by counting the length of array returned by TSD.
 
 Because of this design choice, we cannot make TSD return `numTests` property. If we do that, developers using TSD to 
 run tests programmatically have to make changes so that this breaking change is supported. Thus, we need to contact the
