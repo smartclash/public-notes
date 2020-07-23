@@ -11,7 +11,7 @@ to any test runners that use TSD at it's back like [AVA]() or [Jest]().
 ```ts
 interface ExtendedDiagnostics {
     numTests: number,
-    diagnosis: Diagnostic[]
+    diagnostics: Diagnostic[]
 }
 ```
 
@@ -22,7 +22,7 @@ Doing so, we will get an object like these:
 ```js
 {
     numTests: 1024, // Total number of tests it ran through
-    diagnosis: [] // No failed test cases
+    diagnostics: [] // No failed test cases
 }
 ```
 
@@ -31,7 +31,7 @@ Doing so, we will get an object like these:
 ```js
 {
     numTests: 1024, // Total number of tests it ran through
-    diagnosis: [
+    diagnostics: [
         {
             fileName: 'add.test-d.ts',
             message: 'A message here',
