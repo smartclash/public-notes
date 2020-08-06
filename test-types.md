@@ -7,8 +7,8 @@
   - Write unit tests for relative-paths feature (PR already made)
     - [x] Update documentation
   - Make a PR for verbose reporting to the upstream **after** relative-paths PR is merged.
-    - [ ]unit tests
-    - [ ]update documentation
+    - [ ] unit tests
+    - [ ] update documentation
   - Get it merged
 - Write tests for jest globals
 
