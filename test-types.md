@@ -26,7 +26,7 @@
   - a runner for jest
   - that tests types and uses tsd at the back
 - How to use
-  - first yarn install `yarn install jest-runner-tsd`
+  - first yarn install `yarn add jest-runner-tsd`
   - create a jest config `jest.config.js`
     - Have the runner property set to `jest-runner-tsd`
 
