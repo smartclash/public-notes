@@ -36,6 +36,7 @@
         };
         ```
 
+  - Also mention about jest projects config option.
   - The type definitions file should be in the root with the name `index.d.tsd`
     - if the type def file is somewhere else, specify it's path in each test file at the top like this
 
